@@ -1,0 +1,62 @@
+.containerButton {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7em;
+    margin-top: 2em;
+    // position: absolute;
+    // z-index: 1;
+    @media (max-width: 991px) {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        margin-top: 3em;
+        background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
+    }
+}
+
+.playButton {
+    height: 56px;
+    width: 248px;
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #ffffff;
+    background-color: #242424;
+    text-align: center;
+    @media (max-width: 991px) {}
+}
+
+.plusButton {
+    height: 56px;
+    width: 248px;
+    margin-left: 24px;
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #ffffff;
+    background-color: #24242480;
+    text-align: center;
+    @media (max-width: 991px) {
+        margin-left: 0px;
+        margin-top: 1em;
+        background-color: #242424;
+    }
+}
+
+.playIcon {
+    margin-right: 8px;
+}
+
+.plusIcon {
+    margin-right: 8px;
+}

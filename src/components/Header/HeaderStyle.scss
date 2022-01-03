@@ -1,0 +1,50 @@
+.containerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em 0 1em;
+    padding-top: 1em;
+    // position: absolute;
+    // z-index: 1;
+    .addFilm {
+        display: none;
+    }
+    @media (max-width: 991px) {
+        justify-content: center;
+        margin: 0 0 0 0;
+        .addFilm {
+            display: block;
+            margin-right: 2em;
+            margin-left: 1em;
+        }
+        .profileIcon {
+            margin-left: 1em;
+        }
+        .containerLogo {
+            width: 70vh;
+        }
+        .containerMenu {
+            width: 30vh;
+        }
+        .notificationIcon,
+        .linkIcon,
+        .menuIcon {
+            display: none;
+        }
+    }
+}
+
+.containerLogo {
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.containerMenu {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
