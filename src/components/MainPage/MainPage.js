@@ -19,10 +19,14 @@ export default function MainPage() {
 		<div className="containerAll">
 			<Background />
 			<Header />
+			{/* <div className="prueba"> */}
 			<MenuFilm />
-			{/* <Images popularFilmsMain={popularFilmsMain} />{" "} */}
-			{/* <Video popularFilmsMain={popularFilmsMain} /> */} <Text />
+			<Images popularFilmsMain={popularFilmsMain} /> {/* </div> */}
+			{/* <Video popularFilmsMain={popularFilmsMain} /> */}
+			{/* <div className="prueba2"> */}
+			<Text />
 			<Button />
+			{/* </div> */}
 		</div>
 	);
 }
