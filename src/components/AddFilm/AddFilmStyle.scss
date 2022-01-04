@@ -1,0 +1,39 @@
+.ant-upload {
+    position: absolute;
+    width: 602px;
+    height: 100px;
+    border: 1px dashed #ffffff;
+    box-sizing: border-box;
+    background: #242424;
+}
+
+.addTitle {
+    font-family: Bebas Neue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.iconAndText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin-right: 1em;
+}
+
+.input {
+    position: absolute;
+    width: 248px;
+    height: 0px;
+    left: 241px;
+    top: 288px;
+    border: 1px solid #ffffff;
+}
