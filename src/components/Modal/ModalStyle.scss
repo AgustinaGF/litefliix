@@ -5,6 +5,9 @@
     background-color: #242424;
 }
 
+// .ant-upload {
+//     width: 602px;
+// }
 .ant-modal-close {
     color: #ffffff;
 }
@@ -21,4 +24,41 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 2em;
+}
+
+.title {
+    margin-top: 10em;
+    display: flex;
+    margin-left: 14em;
+    position: absolute;
+    width: 248px;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    background: #242424;
+    font-family: Bebas Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.btnUpload {
+    font-family: Bebas Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #242424;
+    margin-top: 12em;
+    margin-left: 13em;
+    height: 56px;
+    width: 248px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background: #ffffff;
 }

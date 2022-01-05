@@ -21,8 +21,8 @@ export default function Header(props) {
 					alt="link icon"
 					className="linkIcon"
 					onClick={handleOnclickButton}
-				/>
-			</div>
+				/>{" "}
+			</div>{" "}
 			<div className="containerMenu">
 				<img src={Menu} alt="menu icon" className="menuIcon" />
 				<img
@@ -31,7 +31,7 @@ export default function Header(props) {
 					className="notificationIcon"
 				/>
 				<img src={Profile} alt="profile icon" className="profileIcon" />
-			</div>
+			</div>{" "}
 		</div>
 	);
 }
