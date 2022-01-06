@@ -1,14 +1,27 @@
 import React from "react";
-import { feactureFilm } from "../../data/feactureMovie";
+import { Carousel } from "antd";
+import Text from "../Text/Text";
 
-const urlImage = `https://image.tmdb.org/t/p/w500/${feactureFilm.results[0].backdrop_path}`;
-export default function Background() {
-	console.log(feactureFilm);
+export default function Background({ featuredMovie }) {
+	console.log(featuredMovie, "que movie");
+	// const infoMovies = results;
+	const mainFilms = featuredMovie?.slice(0, [4]);
+
 	return (
 		<div className="backgroundBody">
-			<div className="backgroundContainer">
-				<img className="backgroundImage" src={urlImage} />
-			</div>
+			<Carousel className="backgroundContainer" autoplay>
+				{mainFilms.map((element) => {
+					console.log(element, "que cara");
+					let urlImage = `https://image.tmdb.org/t/p/w500/${element.backdrop_path}`;
+					let title = element.original_title;
+					return (
+						<div>
+							<img src={urlImage} className="backgroundImage" />
+							<Text props={title} />
+						</div>
+					);
+				})}
+			</Carousel>
 		</div>
 	);
 }

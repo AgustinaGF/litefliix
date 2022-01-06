@@ -1,35 +1,47 @@
 .containerText {
     display: flex;
     flex-direction: column;
-    margin-left: 6em;
-    margin-top: -26em;
-    // position: absolute;
-    // z-index: 1;
+    margin-left: 4em;
+    margin-top: -32em;
+    z-index: 1;
+    position: absolute;
     @media (max-width: 991px) {
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: -67em;
-        z-index: 2;
-        position: relative;
-        // display: flex;
-        // flex-direction: column;
-        // /* justify-content: center; */
-        // align-items: center;
+        align-items: center;
+        justify-content: center;
+        width: 312px;
+        height: 155px;
+        margin-top: -25em;
     }
 }
 
+// .containerLiteflix {
+// }
 .titleLiteflix {
+    width: 200px;
+    height: 20px;
     font-family: Bebas Neue;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     letter-spacing: 4px;
     text-align: left;
     color: #ffffff;
-    // @media (max-width: 991px) {
-    //     width: 200px;
-    // }
+    width: 100%;
+    @media (max-width: 991px) {
+        line-height: 20px;
+    }
+}
+
+.containerFilmTitle {
+    width: 892px;
+    height: 100px;
+    @media (max-width: 991px) {
+        height: 155px;
+        width: 312px;
+    }
 }
 
 .filmTitle {
@@ -42,7 +54,8 @@
     text-transform: uppercase;
     color: #64eebc;
     margin-top: 24px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    position: relative;
     // @media (min-width: 411px) {
     //     font-size: 66px;
     //     line-height: 77px;
@@ -50,10 +63,13 @@
     //     letter-spacing: 12px;
     // }
     @media (max-width: 991px) {
-        font-size: 76px;
+        font-size: 56px;
         line-height: 77px;
         text-align: center;
         letter-spacing: 12px;
+        position: absolute;
+        width: 312px;
+        // overflow: hidden;
         // margin-top: -8em;
     }
 }
