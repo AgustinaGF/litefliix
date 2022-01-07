@@ -16,18 +16,19 @@ export default function Form(props) {
 					name="title"
 					required
 					className="title"
-					placeholder="TITLE"
+					placeholder="TITULO"
 					id="titleFilm"
 					onChange={handleChangeInput}
-				/>{" "}
+				/>
 				<button
 					className="btnUpload"
-					// onClick={handleLocalStorage}
+					onClick={handleLocalStorage}
 					// onClick=
 					type="submit"
 				>
-					SUBIR PELÍCULA{" "}
-				</button>{" "}
+					SUBIR PELÍCULA
+				</button>
+				<button className="exit">SALIR</button>
 			</form>{" "}
 		</div>
 	);

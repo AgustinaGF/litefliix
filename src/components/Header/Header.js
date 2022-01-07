@@ -14,7 +14,12 @@ export default function Header(props) {
 	return (
 		<div className="containerHeader">
 			<div className="containerLogo">
-				<img src={AddFilm} alt="add film icon " className="addFilm" />
+				<img
+					src={AddFilm}
+					alt="add film icon "
+					className="addFilm"
+					onClick={handleOnclickButton}
+				/>{" "}
 				<img src={LITEFLIX} alt="liteflix icon" className="liteflix" />
 				<img
 					src={Link}

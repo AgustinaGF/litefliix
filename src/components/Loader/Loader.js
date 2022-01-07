@@ -3,8 +3,8 @@ import loading from "../../assets/loading.gif";
 
 export default function Loader() {
 	return (
-		<div>
-			<img src={loading}></img>
+		<div className="coverContainer">
+			<img src={loading} alt="loadind" className="loading"></img>{" "}
 		</div>
 	);
 }

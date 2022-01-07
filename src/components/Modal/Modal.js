@@ -1,10 +1,10 @@
 import { React, useState } from "react";
 import { Modal } from "antd";
-import Avatar from "../AddFilm/AddFilm";
-
-let titleFilmKey = 0;
+import Prueba from "../AddFilm/AddFilm";
 
 export default function ModalFilm(props) {
+	const [title, setTitle] = useState("AGREGAR PELÍCULA ");
+
 	// const [textInput, setTextInput] = useState("");
 	// function handleChange(event) {
 	// 	setTextInput(event.target.value);
@@ -25,28 +25,9 @@ export default function ModalFilm(props) {
 				footer={null}
 				className="modalFilm"
 			>
-				<p className="titleAddFilm"> AGREGAR PELÍCULA </p>{" "}
+				<p className="titleAddFilm"> {title} </p>{" "}
 				<div>
-					<Avatar />
-					{/* <form onSubmit={handleLocalStorage}>
-						<input
-							type="text"
-							name="title"
-							required
-							className="title"
-							placeholder="TITLE"
-							id="titleFilm"
-							onChange={handleChange}
-						/>
-						<button
-							className="btnUpload"
-							// onClick={handleLocalStorage}
-							// onClick=
-							type="submit"
-						>
-							SUBIR PELÍCULA{" "}
-						</button>{" "}
-					</form> */}
+					<Prueba title={title} setTitle={setTitle} />{" "}
 				</div>{" "}
 			</Modal>{" "}
 		</>
