@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { Modal } from "antd";
-import Prueba from "../AddFilm/AddFilm";
+
+import AddFilm from "../AddFilm/AddFilm";
 
 export default function ModalFilm(props) {
 	const [title, setTitle] = useState("AGREGAR PELÍCULA ");
@@ -13,9 +14,9 @@ export default function ModalFilm(props) {
 				footer={null}
 				className="modalFilm"
 			>
-				<p className="titleAddFilm"> {title} </p>
+				<p className="titleAddFilm"> {title} </p>{" "}
 				<div>
-					<Prueba title={title} setTitle={setTitle} />
+					<AddFilm title={title} setTitle={setTitle} />{" "}
 				</div>
 			</Modal>
 		</>

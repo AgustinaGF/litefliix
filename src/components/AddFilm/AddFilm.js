@@ -7,7 +7,7 @@ import { Upload, message } from "antd";
 
 import AddIcon from "../../assets/AddIcon.png";
 
-export default function Prueba(changeTitle) {
+export default function AddFilm(changeTitle) {
 	let arrayFilms = [];
 	const [input, setInput] = useState("");
 	const [failed, setFailed] = useState(false);
@@ -28,7 +28,7 @@ export default function Prueba(changeTitle) {
 			}
 			if (info.file.status === "done") {
 				message.success(`${info.file.name} file uploaded successfully`);
-				console.log(info);
+
 				changeTitle.setTitle("LITEFLIX");
 				setDone(true);
 			} else if (info.file.status === "error") {
@@ -57,7 +57,7 @@ export default function Prueba(changeTitle) {
 			};
 			arrayFilms.push(newFilm);
 			saveLocalStorage(arrayFilms);
-			console.log(input);
+
 			setNameFilm(input);
 		},
 	};

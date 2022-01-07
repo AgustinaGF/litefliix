@@ -17,7 +17,6 @@ export default function MenuFilm() {
 		let films = localStorage.getItem("newFilm");
 		if (films == null) {
 			console.log("no hay peliculas");
-			return <h1> No hay Peliculas cargadas </h1>;
 		} else {
 			setMyFilms(JSON.parse(films));
 			return JSON.parse(films);
