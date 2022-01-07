@@ -7,11 +7,11 @@ export default function Button() {
 		<div className="containerButtonMobile">
 			<button className="playButton">
 				<img src={Play} alt="play icon" className="playIcon" /> Reproducir{" "}
-			</button>{" "}
+			</button>
 			<button className="plusButton">
 				<img src={Plus} alt="plus icon" className="plusIcon" />
-				mi lista{" "}
-			</button>{" "}
+				mi lista
+			</button>
 		</div>
 	);
 }

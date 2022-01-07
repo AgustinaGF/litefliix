@@ -1,18 +1,11 @@
 .containerButtonMobile {
     display: none;
-    // display: flex;
-    // flex-direction: row;
-    // margin-left: 1em;
-    // margin-top: 16em;
-    // position: absolute;
-    // z-index: 1;
     @media (max-width: 991px) {
         display: flex;
         flex-direction: column;
         margin-left: 0;
         align-items: center;
         margin-top: 24em;
-        // background-color: transparent;
         background: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, #242424 100%);
     }
 }
@@ -34,7 +27,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 991px) {}
 }
 
 .plusButton {

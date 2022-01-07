@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React from "react";
 import FullList from "./FullList";
 
 import { Modal } from "antd";
@@ -17,7 +17,6 @@ export default function ListFilm(props) {
 				<p className="titleAddFilm"> TUS PELICULAS </p>
 				<div>
 					{list.map((element) => {
-						console.log(element.titleFilm);
 						return (
 							<FullList title={element.titleFilm} key={element.titleFilm} />
 						);

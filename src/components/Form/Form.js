@@ -23,13 +23,12 @@ export default function Form(props) {
 				<button
 					className="btnUpload"
 					onClick={handleLocalStorage}
-					// onClick=
 					type="submit"
 				>
 					SUBIR PELÍCULA
 				</button>
-				<button className="exit">SALIR</button>
-			</form>{" "}
+				<button className="exit"> SALIR </button>
+			</form>
 		</div>
 	);
 }
